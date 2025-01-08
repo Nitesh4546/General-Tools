@@ -6,7 +6,7 @@ def encoder(text = None):
   >>>print(encoder('Hello! World'))
   >>>000001110001111000100101001001010010100000111110010111100001011000101000001010110010010100011101
   '''
-  if text is None:
+  if not text:
     return 'Enter the text'
   output = ""
   keys = list(string.ascii_uppercase + string.ascii_lowercase + string.digits + string.punctuation + ' ')
@@ -16,14 +16,14 @@ def encoder(text = None):
     output+=unique_binary_dict[char]
   return output
 
-def decode(text = None):
+def decoder(text = None):
   '''
-  This function decodes the binary code produce by the encode function.
+  This function decodes the binary code produce by the encoder function.
   Eg.
-  >>>print(decode('000001110001111000100101001001010010100000111110010111100001011000101000001010110010010100011101'))
+  >>>print(decoder('000001110001111000100101001001010010100000111110010111100001011000101000001010110010010100011101'))
   >>>Hello! World
   '''
-  if text is None:
+  if not text:
     return 'Enter the text'
   output = ''
   keys = list(string.ascii_uppercase + string.ascii_lowercase + string.digits + string.punctuation + ' ')
