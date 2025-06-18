@@ -30,8 +30,11 @@
 ## 🛠️ Installation
 1. Clone the repository:
 ```
-    git clone URL
-    cd File-Organizer
+    git clone https://github.com/Nitesh4546/General-Tools.git
+```
+changing the directory
+```
+    cd 'General-Tools/File Organizer'
 ```
 2. (Optional) Set up a virtual environment:
 ```
