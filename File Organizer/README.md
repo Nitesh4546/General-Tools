@@ -26,7 +26,7 @@
   ├── AutoOrganizer.py
   └── extensions.py
 ```
-
+---
 ## 🛠️ Installation
 1. Clone the repository:
 ```
@@ -39,10 +39,13 @@
 source venv/bin/activate  # Windows: venv\Scripts\activate
 ```
 3, No extra dependencies—just Python.
+
+---
 ## 🚀 Usage
 ```
     python main.py <path_to_your_folder>
 ```
+---
 ## 📄 Example
 Say you have:
 ```
@@ -77,6 +80,8 @@ Downloads/
 │   └── script.py
 └── Other Files/
 ```
+
+---
 ## 🧩 Customization
 - Edit `extensions.py` to adjust or add file types.
 
@@ -84,6 +89,7 @@ Downloads/
 
 - Unmapped types go to `Other Files/`.
 
+---
 ## 🧪 Testing
 1. Make a test directory with dummy files (e.g. `.docx`, .`exe`, `.mp4`, `.bmp`, `.rar`)
 
@@ -91,11 +97,13 @@ Downloads/
 
 3. Verify files are moved into the right folders
 
+---
 ## ❗ Troubleshooting
 - **FileNotFoundError** — Check your startup path; use absolute paths or `cd` into the correct directory.
 - **PermissionError** — Ensure Python has rights to read/write in the folder.
 - **Name collisions** — Duplicate filenames may get overwritten. You might add timestamp or numbering logic if needed.
 
+---
 ## ✅ Contributing
 
 Contributions welcome! Whether it’s better extensions, GUI, packaging improvements, or recursion support—feel free to submit an issue or pull request.
